@@ -118,3 +118,76 @@ img{
   flex-direction: column;
   align-items: flex-start; 
 }
+
+@media (min-width:899px){
+
+  main{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "supervisor builder calculator"
+    "supervisor karma calculator"
+    ;
+    max-width: 1200px; 
+    margin: 0 auto;   
+  }
+  footer{
+    margin-left: 95px;
+    /* margin: 0 auto;    */
+  }
+  .cont-texto{
+    grid-area: titulo;
+  }
+  .text-rel{
+    font-size: 2.3rem;
+  }
+  .text-pow{
+    font-size: 2.3rem;
+  }
+  .text-our{
+    text-align: center;
+    margin-top: 5px;
+    padding: 0px 30%;
+  }
+
+  .cont-su{
+    grid-area: supervisor;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+  }
+  .cont-super{
+    width: 376px;
+    height: 246px;
+  }
+
+  .cont-bu{
+    grid-area: builder;
+  }
+  .cont-buil{
+    width: 376px;
+    height: 246px;
+  }
+
+  .cont-ka{
+    grid-area: karma;
+  }
+  .cont-kar{
+    width: 376px;
+    height: 246px;
+  }
+  .cont-ca{
+    grid-area: calculator;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .cont-cal{
+    width: 376px;
+    height: 246px;
+  
+  }
+
+}
